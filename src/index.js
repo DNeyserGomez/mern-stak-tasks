@@ -1,11 +1,12 @@
 const express = require('express');
+const morgan = require('morgan');
 const app = express();
 
 //Settigs
-
+app.set('port', process.env.PORT || 3000);
 
 //middlewares
-
+app.use(morgan('dev'));
 
 //Routes
 
@@ -13,6 +14,6 @@ const app = express();
 //Statics files
 
 //Starting the server
-app.listen(3000, () => {
-    console.log('Server listen on port 3000');
+app.listen(app.get('port'), () => {
+    console.log(`Server listen on port ${app.get('port')}`);
 });

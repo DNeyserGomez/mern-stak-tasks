@@ -19,7 +19,8 @@
   },
   "homepage": "https://github.com/DNeyserGomez/mern-stak-tasks#readme",
   "dependencies": {
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "morgan": "^1.9.0"
   },
   "devDependencies": {
     "nodemon": "^1.17.5"
