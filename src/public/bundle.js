@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("alert('HOla');\n\n//# sourceURL=webpack:///./src/app/index.js?");
+eval("throw new Error(\"Module parse failed: Unexpected token (7:12)\\nYou may need an appropriate loader to handle this file type.\\n|     render() {\\n|         return (\\n>             <h1>Hello world</h1>\\n|         )\\n|     }\");\n\n//# sourceURL=webpack:///./src/app/index.js?");
 
 /***/ })
 
