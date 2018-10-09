@@ -4,11 +4,13 @@ module.exports = {
         path: __dirname + '/src/public',
         filename: 'bundle.js'
     },
-    module: [
-        {
-            use: 'babel-loader',
-            test: /\.js$/,
-            exclude: /node_modules/
-        }
-    ]
+    module:{
+        rules: [
+            {
+                use: 'babel-loader',
+                test: /\.js$/,
+                exclude: /node_modules/
+            }
+        ]
+    } 
 };
